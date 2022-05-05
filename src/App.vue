@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <h1 class="text-center">Countries API</h1>
+    <Continent />
+    <Searcher />
+    <CardList />
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CardList from './components/CardList.vue'
+import Searcher from './components/Searcher.vue'
+import Continent from './components/Continent.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CardList,
+    Continent,
+    Searcher
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
